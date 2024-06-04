@@ -1,4 +1,4 @@
-## Aplicativo de Assistência ao Atendimento 190
+## Sistema de Gerenciamento de Empréstimo de Livros Biblioteca
 
 <div align="center">
     <img src="https://github.com/alexandrefreitass/EmprestimoLivros/assets/109884524/db5b4ad9-0e21-4867-ac7c-c71f383011d2" />
