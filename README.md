@@ -1,7 +1,7 @@
 ## Aplicativo de Assistência ao Atendimento 190
 
 <div align="center">
-    <img src="https://github.com/alexandrefreitass/auxilioatendente/assets/109884524/1795f1b7-ccf2-410e-a0db-66c295588107" />
+    <img src="https://github.com/alexandrefreitass/EmprestimoLivros/assets/109884524/db5b4ad9-0e21-4867-ac7c-c71f383011d2" />
 </div>
 
 ### Visão Geral
@@ -30,4 +30,4 @@ A aplicação permite que os usuários registrem, editem e excluam empréstimos de l
 
 ### Licença
 
-Este projeto está sob a licença MIT. Consulte o arquivo <a href="https://github.com/alexandrefreitass/auxilioatendente/blob/master/LICENSE">LICENSE</a> para obter mais detalhes.
+Este projeto está sob a licença MIT. Consulte o arquivo <a href="https://github.com/alexandrefreitass/EmprestimoLivros/blob/master/LICENSE">LICENSE</a> para obter mais detalhes.
