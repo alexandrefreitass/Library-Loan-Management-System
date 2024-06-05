@@ -13182,9 +13182,16 @@ select.form-control[multiple] {
     color: #ddd; /* Ou qualquer cor que você preferir para o hover */
 }
 
+/* Estiliza o contêiner do carrossel */
+#livrosCarousel {
+    width: 60%; /* Ajuste a largura conforme necessário */
+    margin: 0 auto; /* Centraliza o carrossel horizontalmente */
+    max-width: 600px; /* Opcional: limite máximo para a largura */
+}
+
+/* Estiliza as imagens dentro do carrossel */
 .carousel-image {
-    max-width: 40%; /* Ajuste o valor conforme necessário */
-    height: auto; /* Mantém a proporção da imagem */
-    margin: 0 auto; /* Centraliza a imagem dentro do slide */
+    width: 100%; /* Faz as imagens ocuparem todo o espaço disponível */
+    height: auto; /* Mantém a proporção das imagens */
 }
 
