@@ -4,15 +4,15 @@
             "decimal": "",
             "emptyTable": "Nenhum registro na tabela",
             "info": "Mostrar _START_ de _END_ de _TOTAL_ entradas",
-            "infoEmpty": "Mostrar 0 de 0 de 0 entradas",
-            "infoFiltered": "(filtered from _MAX_ total entries)",
+            "infoEmpty": "",  // Mensagem removida para quando a tabela está vazia
+            "infoFiltered": "(filtradas de um total de _MAX_ entradas)",
             "infoPostFix": "",
             "thousands": ",",
-            "lengthMenu": "Mostrar _MENU_ entradas",
-            "loadingRecords": "Loading...",
-            "processing": "",
+            "lengthMenu": "6",  // Opção para fixar a quantidade de linhas exibidas sem permitir alteração pelo usuário
+            "loadingRecords": "Carregando...",
+            "processing": "Processando...",
             "search": "Pesquisar:",
-            "zeroRecords": "No matching records found",
+            "zeroRecords": "Nenhum registro correspondente encontrado",
             "paginate": {
                 "first": "Primeiro",
                 "last": "Último",
@@ -20,10 +20,12 @@
                 "previous": "Anterior"
             },
             "aria": {
-                "orderable": "Order by this column",
-                "orderableReverse": "Reverse order this column"
+                "orderable": "Ordenar por esta coluna",
+                "orderableReverse": "Inverter a ordem por esta coluna"
             }
-        }
+        },
+        pageLength: 6,  // Mantém a definição de 6 linhas por página
+        lengthChange: false  // Desabilita a capacidade do usuário de mudar o número de itens por página
     });
 
     setTimeout(function () {
