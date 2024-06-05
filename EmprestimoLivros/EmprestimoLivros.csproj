@@ -6,14 +6,9 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
 
-	<!-- Incluir todos os arquivos em wwwroot no projeto e garantir sua cópia para o diretório de saída -->
-	<ItemGroup>
-		<Content Include="wwwroot\**\*">
-			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-		</Content>
-	</ItemGroup>
+	<!-- Remover as diretivas que incluem explicitamente arquivos estáticos duplicados -->
+	<!-- <ItemGroup> removido porque o SDK já gerencia isso -->
 
-	<!-- Definir referências de pacote -->
 	<ItemGroup>
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
@@ -28,3 +23,4 @@
 	</ItemGroup>
 
 </Project>
+
