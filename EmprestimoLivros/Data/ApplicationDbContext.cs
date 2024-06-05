@@ -7,7 +7,6 @@ namespace EmprestimoLivros.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-            Database.EnsureCreated();
         }
 
         public DbSet<EmprestimosModel> Emprestimos { get; set; }
