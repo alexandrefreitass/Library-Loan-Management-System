@@ -6,7 +6,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Register services in DI container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+{
+    var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    if (string.IsNullOrEmpty(connectionString))
+    {
+        connectionString = Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
+    }
+    options.UseSqlServer(connectionString);
+});
 
 var app = builder.Build();
 
@@ -26,7 +33,6 @@ app.UseStaticFiles();  // Enable serving static files.
 
 app.UseRouting();
 app.UseAuthorization();
-
 
 // Define default route.
 app.MapControllerRoute(
